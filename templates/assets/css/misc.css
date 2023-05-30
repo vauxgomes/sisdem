@@ -1,0 +1,51 @@
+/* Flex */
+
+.flex {
+  display: flex;
+}
+
+.align-center {
+  align-items: center;
+}
+
+.justify-content-between {
+  justify-content: space-between;
+}
+
+.g-1 {
+  gap: 0.25em;
+}
+
+.g-2 {
+  gap: 0.5em;
+}
+
+.g-3 {
+  gap: 1em;
+}
+
+/* Width */
+
+.w-100 {
+  width: 100%;
+}
+
+/* Spacing */
+
+.mb-2 {
+  margin-bottom: 1em;
+}
+
+/* Cards */
+
+.card {
+  padding: 1em;
+  background-color: white;
+  border-radius: 10px;
+}
+
+
+/* Text */
+.text-muted {
+  color: #9b9b9b;
+}

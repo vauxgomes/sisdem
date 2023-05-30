@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Custom CSS -->
+    <link href="./assets/css/main.css" rel="stylesheet" />
+
+    <title>Sisdem</title>
+  </head>
+  <body id="requests-page">
+    <nav>
+      <a href="login">Login</a>
+    </nav>
+
+    <header>
+      <img class="logo" src="assets/imgs/logo.svg" alt="logo" />
+      <h1>Demandas</h1>
+    </header>
+
+    <div class="card flex">
+      <img src="assets/icons/search.svg" />
+      <input type="number" placeholder="Código da demanda" min="0" />
+      <img src="assets/icons/hash.svg" />
+    </div>
+
+    <main>
+      <div class="title">
+        <h3>Nova demanda</h3>
+        <button class="btn" onclick="toggleShowForm()">Iniciar</button>
+      </div>
+
+      <form id="demanda-form">
+        <div class="form-group">
+          <label class="h3" for="type">Tipo de demanda</label>
+          <select name="type" required>
+            <option value="" disabled selected hidden>Selecione</option>
+            <option>Tipo 1</option>
+            <option>Tipo 2</option>
+            <option>Tipo 3</option>
+            <option>Tipo 4</option>
+            <option>Tipo 5</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="h3" for="location">Local</label>
+          <select name="location" required>
+            <option value="" disabled selected hidden>Selecione</option>
+            <option>Local 1</option>
+            <option>Local 2</option>
+            <option>Local 3</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label class="h3" for="description">Descrição</label>
+          <textarea
+            name="description"
+            placeholder="Descreva a sua demanda"
+            rows="8"
+          ></textarea>
+        </div>
+
+        <button class="btn-success" type="button">
+          <img src="assets/icons/camera.svg" alt="Foto" width="18px" />
+        </button>
+
+        <div class="form-group">
+          <button class="btn w-100" type="submit">Enviar</button>
+          <button class="btn-link" type="reset">Cancelar</button>
+        </div>
+      </form>
+    </main>
+
+    <footer class="text-muted">Sistema Demandas IFCE Jaguaribe</footer>
+  </body>
+
+  <script>
+    function toggleShowForm() {
+      document.querySelector('main').classList.toggle('active')
+    }
+  </script>
+</html>
